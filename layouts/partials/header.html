@@ -10,6 +10,9 @@
       {{ .Site.Title }}
     </a>
   {{ end }}
+  {{ if .IsPage }}
+    <h1>{{ .Title }}</h1>
+  {{ end }}
   <ul>
     <li>
       <button class="btn btn-square group" id="menu-toggle" aria-expanded="false" type="button" title="{{ T "menu" }}">
