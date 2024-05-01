@@ -13,6 +13,7 @@ if (gallery) {
     bgOpacity: 1,
     pswpModule: PhotoSwipe,
     imageClickAction: "close",
+    loop: false,
     paddingFn: (viewportSize) => {
       return viewportSize.x < 700
         ? {
