@@ -65,6 +65,7 @@ if (gallery) {
 
   lightbox.on("close", () => {
     history.replaceState("", document.title, window.location.pathname);
+    if (pswp.currSlide.data.element) pswp.currSlide.data.element.scrollIntoView({block: "nearest"});
   });
 
   new PhotoSwipeDynamicCaption(lightbox, {
